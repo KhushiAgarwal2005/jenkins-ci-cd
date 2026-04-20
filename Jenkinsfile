@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/KhushiAgarwal2005/jenkins-ci-cd.git'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Building application...'
